@@ -1,0 +1,26 @@
+chromedriver.exe
+target/
+test-output/
+lib/
+out/
+testyIsui/
+temp/
+
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nbactions-release-profile.xml
+nb-configuration.xml
+
+
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
