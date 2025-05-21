@@ -11,7 +11,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        com.sun.org.apache.xml.internal.security.Init.init();
         System.setProperty("javax.net.ssl.trustStoreType", "WINDOWS-ROOT");
 
         JFrame jframe = new JFrame();
@@ -24,6 +23,7 @@ public class Main {
         List<String> posidents = input.getPosidents();
 
         Ws ws = new Ws();
+        com.sun.org.apache.xml.internal.security.Init.init();
         ArrayList<String> radkyVfk = ws.getRadkyVfk(posidents, endpoint, userName, password);
         Vfk vfk = new Vfk(OutputFile, charSet);
         vfk.write(radkyVfk);
