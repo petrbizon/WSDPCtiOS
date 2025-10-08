@@ -26,6 +26,8 @@ public class JFrame extends javax.swing.JFrame {
         jTextFieldEndpoint.setText(Config.loadEndpoint());
         jTextFieldUserName.setText(Config.loadUserName());
         jPasswordField.setText(Config.loadPassword());
+        jTextFieldInputFile.setText(Config.loadInputPath());
+        jTextFieldOutputFile.setText(Config.loadOutputPath());
     }
 
     /**
@@ -257,7 +259,7 @@ public class JFrame extends javax.swing.JFrame {
 
             //jTextFieldOutputFile.setText(jfc.getSelectedFile().getPath());
             jTextFieldOutputFile.setText(filename);
-            Config.saveOutputPath(jfc.getSelectedFile().getPath());
+            Config.saveOutputPath(filename);
 
         }
 
